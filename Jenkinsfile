@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Ankitkumar0909/Jenkins-project.git'
+                git branch: 'main', url: 'https://github.com/Ankitkumar0909/Jenkins-project.git'
             }
         }
         stage('Build') {
